@@ -1,0 +1,12 @@
+repositories:
+- name: postgres-operator-charts 
+  url: https://opensource.zalando.com/postgres-operator/charts/postgres-operator 
+releases:
+  - name: postgre 
+    chart: postgres-operator-charts/postgres-operator 
+    namespace: psql 
+    version: 1.11.0
+    values:
+      - values.yaml
+helmDefaults:
+  createNamespace: true
