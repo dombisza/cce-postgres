@@ -1,3 +1,10 @@
+# deployment
+
+```
+helmfile sync
+kubectl apply -f psql.yaml
+```
+
 # example running pod
 
 ```
